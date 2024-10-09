@@ -77,22 +77,24 @@ const Services = [
         </div>
 
         <!-- About Section -->
-        <div class="md:flex justify-between items-center mt-16 bg-gray-second p-5">
-            <img src="/images/about-meal.svg" alt="About meal" class="w-full" />
-            <div class="capitalize space-y-8 lg:max-w-[50%] lg:p-8">
-                <p class="text-3xl text-green-color font-satistfy">Why choose us?</p>
-                <h2 class="text-2xl md:text-3xl font-extrabold text-header-color">
-                    What's make our food delicious!
-                </h2>
-                <p class="text-gray-color">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut
-                    explicabo, numquam iusto est a ipsum assumenda tempore esse corporis?
-                </p>
-                <Button :buttonName="read"></Button>
+        <div class="bg-gray-second">
+            <div class="max-w-screen-xl mx-auto md:flex justify-between items-center mt-16 p-5">
+                <img src="/images/about-meal.svg" alt="About meal" class="w-full" />
+                <div class="capitalize space-y-8 lg:max-w-[50%] lg:p-8">
+                    <p class="text-3xl text-green-color font-satistfy">Why choose us?</p>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-header-color">
+                        What's make our food delicious!
+                    </h2>
+                    <p class="text-gray-color">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut
+                        explicabo, numquam iusto est a ipsum assumenda tempore esse corporis?
+                    </p>
+                    <Button :buttonName="read"></Button>
 
-                <!-- Services Cards -->
-                <div class="grid grid-cols-1 smartphone:grid-cols-2 gap-4 mt-10">
-                    <ServicesCard v-for="(service, i) in Services" :key="i" :service="service" />
+                    <!-- Services Cards -->
+                    <div class="grid grid-cols-1 smartphone:grid-cols-2 gap-4 mt-10">
+                        <ServicesCard v-for="(service, i) in Services" :key="i" :service="service" />
+                    </div>
                 </div>
             </div>
         </div>
