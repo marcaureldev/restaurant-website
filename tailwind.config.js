@@ -18,7 +18,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        custom: ['Poppins'],
+        poppins: ['Poppins'],
+        satistfy: ['Satisfy'],
       },
       colors: {
         'header-color': '#130F40',

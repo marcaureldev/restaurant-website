@@ -1,5 +1,5 @@
 <template>
-  <div class="font-custom">
+  <div class="font-poppins">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
