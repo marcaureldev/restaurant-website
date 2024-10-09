@@ -1,5 +1,31 @@
 <script setup>
 const buttonName = "Order Now";
+const Categories = [
+    {
+        picture: '/images/combo.svg',
+        name: 'Combo'
+    },
+    {
+        picture: '/images/pizza.svg',
+        name: 'Pizza'
+    },
+    {
+        picture: '/images/burger.svg',
+        name: 'Burger'
+    },
+    {
+        picture: '/images/chicken.svg',
+        name: 'Chicken'
+    },
+    {
+        picture: '/images/dinner.svg',
+        name: 'Dinner'
+    },
+    {
+        picture: '/images/coffee.svg',
+        name: 'Coffee'
+    },
+]
 </script>
 
 <template>
@@ -23,6 +49,8 @@ const buttonName = "Order Now";
             </div>
         </div>
 
-        
+        <div class="grid grid-cols-2 smartphone:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-20">
+            <CategoriesCard v-for="(category, i) in Categories" :key="i" :category="category" />
+        </div>
     </div>
 </template>
