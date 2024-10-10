@@ -164,9 +164,9 @@ const responsiveOptions = ref([
 
         <!-- About Section -->
         <div class="bg-gray-second">
-            <div class="max-w-screen-xl mx-auto md:flex justify-between items-center mt-16 p-5">
+            <div class="max-w-screen-xl mx-auto md:flex justify-between items-center mt-16">
                 <img src="/images/about-meal.svg" alt="About meal" class="w-full" />
-                <div class="capitalize space-y-8 lg:max-w-[50%] lg:p-8">
+                <div class="capitalize space-y-8 lg:max-w-[50%] lg:p-5">
                     <p class="text-3xl text-green-color font-satistfy">Why choose us?</p>
                     <h2 class="text-2xl md:text-3xl font-extrabold text-header-color">
                         What's make our food delicious!
