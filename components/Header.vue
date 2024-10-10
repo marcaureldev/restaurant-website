@@ -19,7 +19,7 @@ const menuOpen = () => {
             <NavBar class="hidden lg:block" />
 
             <!-- Mobile Navigation bar -->
-            <div class="lg:hidden absolute w-full p-8 bg-white top-20 duration-500 lg:duration-0 ease-in-out"
+            <div class="lg:hidden absolute w-full p-8 bg-white top-16 duration-500 lg:duration-0 ease-in-out"
                 :class="[open ? 'left-0' : 'left-[-100%]']">
                 <NavBar />
             </div>

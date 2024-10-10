@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --p-carousel-indicator-width: 15px !important;
+    --p-carousel-indicator-height: 15px !important;
+    --p-carousel-indicator-border-radius: 50% !important;
+    --p-carousel-indicator-active-background: #27AE60 !important;
+}

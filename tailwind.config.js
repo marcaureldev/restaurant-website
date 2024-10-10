@@ -26,6 +26,7 @@ module.exports = {
         'green-color': '#27AE60',
         'gray-color': '#666666',
         'gray-second': '#F7F7F7',
+        'stars-color': '#ffd700',
       },
     },
   },
