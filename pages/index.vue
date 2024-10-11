@@ -2,117 +2,6 @@
 import Carousel from 'primevue/carousel';
 const order = "Order Now";
 const read = "Read More";
-const Categories = [
-    {
-        picture: "/images/combo.svg",
-        name: "Combo",
-    },
-    {
-        picture: "/images/pizza.svg",
-        name: "Pizza",
-    },
-    {
-        picture: "/images/burger.svg",
-        name: "Burger",
-    },
-    {
-        picture: "/images/chicken.svg",
-        name: "Chicken",
-    },
-    {
-        picture: "/images/dinner.svg",
-        name: "Dinner",
-    },
-    {
-        picture: "/images/coffee.svg",
-        name: "Coffee",
-    },
-];
-
-const Services = [
-    {
-        picture: "/icons/delivery-icon.png",
-        name: "Fast Delivery",
-    },
-    {
-        picture: "/icons/fresh-food-icon.png",
-        name: "Fresh Food",
-    },
-    {
-        picture: "/icons/quality-icon.png",
-        name: "Burger",
-    },
-    {
-        picture: "/icons/support-icon.png",
-        name: "Chicken",
-    },
-];
-
-const popularFood = [
-    {
-        name: "Vegetable Gyoza",
-        picture: "/images/food-1.png",
-        count: 5,
-        actualPrice: 40,
-        oldPrice: 50,
-    },
-
-    {
-        name: "Hamburger",
-        picture: "/images/food-2.png",
-        count: 4.5,
-        actualPrice: 40,
-        oldPrice: 50,
-    },
-
-    {
-        name: "Pizza",
-        picture: "/images/food-3.png",
-        count: 4,
-        actualPrice: 40,
-        oldPrice: 50,
-    },
-
-    {
-        name: "Burger O'Black",
-        picture: "/images/food-4.png",
-        count: 3.5,
-        actualPrice: 40,
-        oldPrice: 50,
-    },
-
-    {
-        name: "Pizza Baked",
-        picture: "/images/food-5.png",
-        count: 5.5,
-        actualPrice: 40,
-        oldPrice: 50,
-    },
-
-    {
-        name: "Mushroom Pizza",
-        picture: "/images/food-6.png",
-        count: 3.5,
-        actualPrice: 40,
-        oldPrice: 50,
-    },
-
-    {
-        name: "Cheeseburger",
-        picture: "/images/food-7.png",
-        count: 4.5,
-        actualPrice: 40,
-        oldPrice: 50,
-    },
-
-    {
-        name: "Kabab Pizza",
-        picture: "/images/food-8.png",
-        count: 5.5,
-        actualPrice: 40,
-        oldPrice: 50,
-    },
-]
 
 const responsiveOptions = ref([
 
@@ -164,10 +53,10 @@ const responsiveOptions = ref([
 
         <!-- About Section -->
         <div class="bg-gray-second">
-            <div class="max-w-screen-xl mx-auto md:flex justify-between items-center mt-16">
-                <img src="/images/about-meal.svg" alt="About meal" class="w-full" />
-                <div class="capitalize space-y-8 lg:max-w-[50%] lg:p-5">
-                    <p class="text-3xl text-green-color font-satistfy">Why choose us?</p>
+            <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-between items-center mt-16">
+                <img src="/images/about-meal.svg" alt="About meal" class="w-full p-4 md:p-0" />
+                <div class="capitalize space-y-8 lg:max-w-[50%] p-5">
+                    <p class="text-3xl text-green-color font-satisfy">Why choose us?</p>
                     <h2 class="text-2xl md:text-3xl font-extrabold text-header-color">
                         What's make our food delicious!
                     </h2>
@@ -188,7 +77,7 @@ const responsiveOptions = ref([
         <!-- Popular Food section -->
         <div class="max-w-screen-xl mx-auto mt-16">
             <div class="text-center space-y-5">
-                <p class="text-2xl text-green-color font-satistfy">Popular Food</p>
+                <p class="text-2xl text-green-color font-satisfy">Popular Food</p>
                 <h2 class="text-2xl md:text-3xl font-extrabold text-header-color">
                     Our Special Dishes
                 </h2>
@@ -203,8 +92,21 @@ const responsiveOptions = ref([
                         <PopularCard :food="slotProps.data" class="mx-2" />
                     </template>
                 </Carousel>
+            </div>
+        </div>
 
+        <div
+            class="p-5">
+            <div class="bg-row-banner bg-center bg-cover bg-no-repeat max-w-screen-xl mx-auto h-[20em] flex justify-start items-center">
+                <div class="space-y-4 mx-5 p-8">
+                    <p class="font-satisfy text-4xl text-cheese-color">Double Cheese</p>
+                    <h2 class="text-2xl md:text-5xl font-extrabold text-burger-color">BURGER</h2>
+                    <p class="text-black text-xl">With Coca-Cola and fries</p>
+                    <ButtonComponent :buttonName="order"></ButtonComponent>
+                </div>
             </div>
         </div>
     </div>
 </template>
+
+

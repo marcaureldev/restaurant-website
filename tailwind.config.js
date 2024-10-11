@@ -19,7 +19,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['Poppins'],
-        satistfy: ['Satisfy'],
+        satisfy: ['Satisfy'],
       },
       colors: {
         'header-color': '#130F40',
@@ -27,7 +27,12 @@ module.exports = {
         'gray-color': '#666666',
         'gray-second': '#F7F7F7',
         'stars-color': '#ffd700',
+        'cheese-color': '#130f40',
+        'burger-color': '#ff0000',
       },
+      backgroundImage: {
+        'row-banner': "url('/images/row-banner.png')",
+      }
     },
   },
   plugins: [],
