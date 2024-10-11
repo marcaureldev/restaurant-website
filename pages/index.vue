@@ -6,7 +6,7 @@ const read = "Read More";
 const responsiveOptions = ref([
 
     {
-        breakpoint: '1024px',
+        breakpoint: '1185px',
         numVisible: 3,
         numScroll: 1
     },
@@ -17,8 +17,8 @@ const responsiveOptions = ref([
     },
     {
         breakpoint: '640px',
-        numVisible: 1,
-        numScroll: 1
+        numVisible: 2,
+        numScroll: 1,
     }
 ]);
 </script>
@@ -87,7 +87,7 @@ const responsiveOptions = ref([
             <div class="mt-10">
                 <!-- <PopularCard v-for="(food, i) in popularFood" :key="i" :food="food" /> -->
                 <Carousel :value="popularFood" :numVisible="4" :numScroll="1" :circular="true" :autoplayInterval="3000"
-                    :responsiveOptions="responsiveOptions">
+                    :responsiveOptions="responsiveOptions" :showNavigators="false" class="p-4">
                     <template #item="slotProps">
                         <PopularCard :food="slotProps.data" class="mx-2" />
                     </template>
@@ -95,9 +95,9 @@ const responsiveOptions = ref([
             </div>
         </div>
 
-        <div
-            class="p-5">
-            <div class="bg-row-banner bg-center bg-cover bg-no-repeat max-w-screen-xl mx-auto h-[20em] flex justify-start items-center">
+        <div class="p-5 max-w-screen-xl mx-auto">
+            <div
+                class="bg-row-banner bg-center bg-cover bg-no-repeat h-[20em] flex justify-start items-center">
                 <div class="space-y-4 mx-5 p-8">
                     <p class="font-satisfy text-4xl text-cheese-color">Double Cheese</p>
                     <h2 class="text-2xl md:text-5xl font-extrabold text-burger-color">BURGER</h2>
@@ -109,4 +109,10 @@ const responsiveOptions = ref([
     </div>
 </template>
 
-
+<style>
+@media (max-width: 820px) and (min-width: 820px)   {
+    .carousel-item {
+        margin: 0 5px;
+    }
+}
+</style>

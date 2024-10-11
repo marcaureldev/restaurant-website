@@ -22,7 +22,7 @@ const isfavorite = () => {
 
 <template>
 
-  <div class="bg-gray-second p-5 sm:max-w-72  rounded-md space-y-3 text-center relative">
+  <div class="bg-gray-second p-5 sm:max-w-72 md:mx-auto carousel-item rounded-md space-y-3 text-center relative">
 
     <OutlineFavorite @click="isfavorite" :class="[favorite ? 'text-green-color' : 'text-gray-color']"
       class="w-8 h-8 absolute text-gray-color right-5"></OutlineFavorite>
