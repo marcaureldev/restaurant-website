@@ -24,8 +24,8 @@ const isfavorite = () => {
 
   <div class="bg-gray-second p-5 sm:max-w-72 md:mx-auto carousel-item rounded-md space-y-3 text-center relative">
 
-    <OutlineFavorite @click="isfavorite" :class="[favorite ? 'text-green-color' : 'text-gray-color']"
-      class="w-8 h-8 absolute text-gray-color right-5"></OutlineFavorite>
+    <IconsOutlineFavorite @click="isfavorite" :class="[favorite ? 'text-green-color' : 'text-gray-color']"
+      class="w-8 h-8 absolute text-gray-color right-5"></IconsOutlineFavorite>
 
     <img :src="food.picture" alt="Popular food" class="w-[75%] mx-auto" />
 
@@ -33,13 +33,13 @@ const isfavorite = () => {
 
     <div class="flex items-center justify-center text-black">
 
-      <FullStar v-for="i in Math.floor(food.count)" class="size-5 text-stars-color"></FullStar>
+      <IconsFullStar v-for="i in Math.floor(food.count)" class="size-5 text-stars-color"></IconsFullStar>
 
       <!-- Dans tous les cas le  composant HalfStar(étoile à moitié pleine) ne sera affiché que si le nombre de vote est supérieur à la partie entière de ce même nombre   -->
 
-      <HalfStar v-if="food.count - Math.floor(props.food.count) > 0" class="size-5 text-stars-color"></HalfStar>
+      <IconsHalfStar v-if="food.count - Math.floor(props.food.count) > 0" class="size-5 text-stars-color"></IconsHalfStar>
 
-      <EmptyStar v-for="i in emptyStar" class="size-5 text-stars-color"></EmptyStar>
+      <IconsEmptyStar v-for="i in emptyStar" class="size-5 text-stars-color"></IconsEmptyStar>
 
       ({{ food.count }})
 
