@@ -109,3 +109,23 @@ export const popularFood = [
         oldPrice: 50,
     },
 ];
+
+export const offers = [
+    {
+        picture: '/images/offer-banner-1.png',
+        title: 'Special Offer',
+        percentage: 'Upto 50% off',
+    },
+
+    {
+        picture: '/images/offer-banner-2.png',
+        title: 'Special Offer',
+        percentage: 'Upto 25% Extra',
+    },
+    
+    {
+        picture: '/images/offer-banner-3.png',
+        title: 'Special Offer',
+        percentage: '100% Cashback',
+    },
+]

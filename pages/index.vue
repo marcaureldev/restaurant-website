@@ -17,7 +17,7 @@ const responsiveOptions = ref([
     },
     {
         breakpoint: '640px',
-        numVisible: 2,
+        numVisible: 1,
         numScroll: 1,
     }
 ]);
@@ -98,13 +98,17 @@ const responsiveOptions = ref([
         <div class="p-5 max-w-screen-xl mx-auto">
             <div
                 class="bg-row-banner bg-center bg-cover bg-no-repeat h-[20em] flex justify-start items-center">
-                <div class="space-y-4 mx-5 p-8">
+                <div class="space-y-4 mx-5 lg:p-8">
                     <p class="font-satisfy text-4xl text-cheese-color">Double Cheese</p>
                     <h2 class="text-2xl md:text-5xl font-extrabold text-burger-color">BURGER</h2>
                     <p class="text-black text-xl">With Coca-Cola and fries</p>
                     <ButtonComponent :buttonName="order"></ButtonComponent>
                 </div>
             </div>
+        </div>
+
+        <div class="max-w-screen-xl mx-auto mt-12 p-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <OfferCard v-for="(offer, i) in offers" :key="i" :offer="offer"></OfferCard>
         </div>
     </div>
 </template>
