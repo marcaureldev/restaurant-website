@@ -95,9 +95,9 @@ const responsiveOptions = ref([
             </div>
         </div>
 
+        <!-- Call to action section -->
         <div class="p-5 max-w-screen-xl mx-auto">
-            <div
-                class="bg-row-banner bg-center bg-cover bg-no-repeat h-[20em] flex justify-start items-center">
+            <div class="bg-row-banner bg-center bg-cover bg-no-repeat h-[20em] flex justify-start items-center">
                 <div class="space-y-4 mx-5 lg:p-8">
                     <p class="font-satisfy text-4xl text-cheese-color">Double Cheese</p>
                     <h2 class="text-2xl md:text-5xl font-extrabold text-burger-color">BURGER</h2>
@@ -107,14 +107,26 @@ const responsiveOptions = ref([
             </div>
         </div>
 
+        <!-- Offers section -->
         <div class="max-w-screen-xl mx-auto mt-12 p-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <OfferCard v-for="(offer, i) in offers" :key="i" :offer="offer"></OfferCard>
+        </div>
+
+        <!-- Menu section -->
+        <div class="max-w-screen-xl mx-auto mt-12 p-5">
+            <div class="text-center space-y-4">
+                <p class="text-2xl text-green-color font-satisfy capitalize">Our menu</p>
+                <h2 class="capitalize font-bold text-2xl text-header-color">Our top dishes</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+                <MenuCard v-for="(menu, i ) in menus" :key="i" :menu="menu"></MenuCard>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
-@media (max-width: 820px) and (min-width: 820px)   {
+@media (max-width: 820px) and (min-width: 820px) {
     .carousel-item {
         margin: 0 5px;
     }

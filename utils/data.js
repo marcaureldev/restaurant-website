@@ -128,4 +128,38 @@ export const offers = [
         title: 'Special Offer',
         percentage: '100% Cashback',
     },
-]
+];
+
+export const menus = [
+        {
+            picture: "/images/burger-vegetarien.png",
+            name: "Veggie Burger",
+            price:40,
+        },
+        {
+            picture: "/images/gada-pizza.png",
+            name: "Gada Pizza",
+            price:40,
+        },
+        {
+            picture: "/images/panini-sandwich.png",
+            name: "Panini Sandwich",
+            price:40,
+        },
+
+        {
+            picture: "/images/sandwich-jambon.png",
+            name: "Ham Sandwich",
+            price:40,
+        },
+        {
+            picture: "/images/frites-lardons.png",
+            name: "Bacon fries",
+            price:40,
+        },
+        {
+            picture: "/images/nature-pizza.png",
+            name: "Nature Pizza",
+            price:40,
+        },
+];
