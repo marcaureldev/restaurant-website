@@ -2,6 +2,9 @@
 import Carousel from 'primevue/carousel';
 const order = "Order Now";
 const read = "Read More";
+const orderPicture1 = "/icons/calendar-icon.png";
+const orderPicture2 = "/icons/phone-icon.png";
+const orderPicture3 = "/icons/location-icon.png";
 
 const responsiveOptions = ref([
 
@@ -113,13 +116,43 @@ const responsiveOptions = ref([
         </div>
 
         <!-- Menu section -->
-        <div class="max-w-screen-xl mx-auto mt-12 p-5">
+        <div class="max-w-screen-xl mx-auto mt-12 p-5 cursor-pointer">
             <div class="text-center space-y-4">
                 <p class="text-2xl text-green-color font-satisfy capitalize">Our menu</p>
                 <h2 class="capitalize font-bold text-2xl text-header-color">Our top dishes</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                 <MenuCard v-for="(menu, i ) in menus" :key="i" :menu="menu"></MenuCard>
+            </div>
+        </div>
+
+        <!-- Order now section -->
+        <div class="max-w-screen-xl mx-auto mt-12 p-5">
+            <div class="text-center space-y-4">
+                <p class="text-2xl text-green-color font-satisfy capitalize">Order now</p>
+                <h2 class="capitalize font-bold text-2xl text-header-color">Fastest home delivery</h2>
+            </div>
+            <div class="mt-8 flex flex-wrap justify-center items-center space-y-4 lg:space-y-0 cursor-pointer">
+                <OrderCard :picture="orderPicture1" title="7:00am to 10:30pm"></OrderCard>
+                <OrderCard :picture="orderPicture2" title="+123-456-7890"></OrderCard>
+                <OrderCard :picture="orderPicture3" title="Sénegal - Dakar"></OrderCard>
+            </div>
+
+            <div class="mt-8 p-2 max-w-screen-xl mx-auto">
+                <FormComponent></FormComponent>
+            </div>
+        </div>
+
+        <!-- Blog section -->
+        <div class="max-w-screen-xl mx-auto p-5">
+            <div class="text-center space-y-4">
+                <p class="text-2xl text-green-color font-satisfy capitalize">Our blog</p>
+                <h2 class="capitalize font-bold text-2xl text-header-color">Our daily stories</h2>
+            </div>
+            <div class="flex flex-wrap mt-8 justify-center items-center space-y-4 lg:space-y-0 cursor-pointer">
+                <BlogCard picture="/images/blog-1.jpg"></BlogCard>
+                <BlogCard picture="/images/blog-2.jpg"></BlogCard>
+                <BlogCard picture="/images/blog-3.jpg"></BlogCard>
             </div>
         </div>
     </div>

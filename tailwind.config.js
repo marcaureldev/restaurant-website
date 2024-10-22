@@ -35,6 +35,7 @@ module.exports = {
         'offer-banner-1': "url('/images/offer-banner-1.png')",
         'offer-banner-2': "url('/images/offer-banner-2.png')",
         'offer-banner-3': "url('/images/offer-banner-3.png')",
+        'blog': "url('/images/blog-1.jpg')",
       }
     },
   },
