@@ -2,9 +2,9 @@
 import Carousel from 'primevue/carousel';
 const order = "Order Now";
 const read = "Read More";
-const orderPicture1 = "/icons/calendar-icon.png";
-const orderPicture2 = "/icons/phone-icon.png";
-const orderPicture3 = "/icons/location-icon.png";
+const orderPicture1 = "/icons/calendar-icon.webp";
+const orderPicture2 = "/icons/phone-icon.webp";
+const orderPicture3 = "/icons/location-icon.webp";
 
 const responsiveOptions = ref([
 
@@ -42,9 +42,9 @@ const responsiveOptions = ref([
                 <ButtonComponent :buttonName="order"></ButtonComponent>
             </div>
             <div class="space-y-14 smartphone:space-y-20 lg:space-y-16 xl:s relative w-full">
-                <img src="/images/hero-meal-parallax.png" alt="hero-meal"
+                <img src="/images/hero-meal-parallax.webp" alt="hero-meal"
                     class="absolute -top-6 md:-top-24 xl:-top-10 right-0 w-full" />
-                <img src="/images/hero-meal.png" alt="hero-meal" class="w-[60%] lg:w-[80%] mx-auto" />
+                <img src="/images/hero-meal.webp" alt="hero-meal" class="w-[60%] lg:w-[80%] mx-auto" />
             </div>
         </div>
 
@@ -150,9 +150,9 @@ const responsiveOptions = ref([
                 <h2 class="capitalize font-bold text-2xl text-header-color">Our daily stories</h2>
             </div>
             <div class="flex flex-wrap mt-8 justify-center items-center space-y-4 lg:space-y-0 cursor-pointer">
-                <BlogCard picture="/images/blog-1.jpg"></BlogCard>
-                <BlogCard picture="/images/blog-2.jpg"></BlogCard>
-                <BlogCard picture="/images/blog-3.jpg"></BlogCard>
+                <BlogCard picture="/images/blog-1.webp"></BlogCard>
+                <BlogCard picture="/images/blog-2.webp"></BlogCard>
+                <BlogCard picture="/images/blog-3.webp"></BlogCard>
             </div>
         </div>
 

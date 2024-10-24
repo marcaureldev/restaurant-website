@@ -31,7 +31,7 @@ module.exports = {
         'burger-color': '#ff0000',
       },
       backgroundImage: {
-        'row-banner': "url('/images/row-banner.png')",
+        'row-banner': "url('/images/row-banner.webp')",
         'offer-banner-1': "url('/images/offer-banner-1.png')",
         'offer-banner-2': "url('/images/offer-banner-2.png')",
         'offer-banner-3': "url('/images/offer-banner-3.png')",
