@@ -46,6 +46,7 @@ export const Services = [
 
 export const popularFood = [
     {
+        id: 1,
         name: "Vegetable Gyoza",
         picture: "/images/food-1.webp",
         count: 5,
@@ -54,6 +55,7 @@ export const popularFood = [
     },
 
     {
+        id: 2,
         name: "Hamburger",
         picture: "/images/food-2.webp",
         count: 4.5,
@@ -62,6 +64,7 @@ export const popularFood = [
     },
 
     {
+        id: 3,
         name: "Pizza",
         picture: "/images/food-3.webp",
         count: 4,
@@ -70,6 +73,7 @@ export const popularFood = [
     },
 
     {
+        id: 4,
         name: "Burger O'Black",
         picture: "/images/food-4.webp",
         count: 3.5,
@@ -78,6 +82,7 @@ export const popularFood = [
     },
 
     {
+        id: 5,
         name: "Pizza Baked",
         picture: "/images/food-5.webp",
         count: 5.5,
@@ -86,6 +91,7 @@ export const popularFood = [
     },
 
     {
+        id: 6,
         name: "Mushroom Pizza",
         picture: "/images/food-6.webp",
         count: 3.5,
@@ -94,6 +100,7 @@ export const popularFood = [
     },
 
     {
+        id: 7,
         name: "Cheeseburger",
         picture: "/images/food-7.webp",
         count: 4.5,
@@ -102,6 +109,7 @@ export const popularFood = [
     },
 
     {
+        id: 8,
         name: "Kabab Pizza",
         picture: "/images/food-8.webp",
         count: 5.5,

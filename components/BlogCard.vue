@@ -32,7 +32,7 @@ const changebackground = computed(() => props.picture)
         </div>
 
         <!-- Blog content -->
-        <div class="bg-gray-second text-black p-4 space-y-4 rounded-b-md">
+        <div class="bg-gray-second text-black p-4 space-y-5 rounded-b-md">
             <div class="flex space-x-2 items-center text-sm">
                 <p class="flex space-x-2 items-center">
                     <img src="/icons/etiquette-icon.svg" alt="Etiquette" />

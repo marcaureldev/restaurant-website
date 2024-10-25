@@ -12,7 +12,12 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-10-07',
-  modules: ['@nuxt/fonts', '@nuxtjs/tailwindcss', '@primevue/nuxt-module'],
+  modules: [
+    '@nuxt/fonts',
+    '@nuxtjs/tailwindcss',
+    '@primevue/nuxt-module',
+    '@pinia/nuxt'
+  ],
 
   primevue: {
     options: {

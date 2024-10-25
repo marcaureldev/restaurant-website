@@ -57,7 +57,7 @@ const responsiveOptions = ref([
         <!-- About Section -->
         <div class="bg-gray-second">
             <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-between items-center mt-16">
-                <img src="/images/about-meal.svg" alt="About meal" class="w-full p-4 md:p-0" />
+                <img src="/images/about-meal.svg" alt="About meal" class="p-4 md:p-0" />
                 <div class="capitalize space-y-8 lg:max-w-[50%] p-5">
                     <p class="text-3xl text-green-color font-satisfy">Why choose us?</p>
                     <h2 class="text-2xl md:text-3xl font-extrabold text-header-color">
