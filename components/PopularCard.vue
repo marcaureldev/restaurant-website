@@ -1,8 +1,9 @@
 <script setup>
+import { useCartStore } from '~/store/useCartStore';
 const props = defineProps({
   food: {
     type: Object
-  }
+  },
 })
 
 if (props.food.count > 5) {
@@ -11,16 +12,23 @@ if (props.food.count > 5) {
 
 const emptyStar = 5 - Math.ceil(props.food.count)
 
-const { toggleFavorite, isFavorite } = useFavorites();
+const { toggleFavorites, isFavorite } = useFavorites();
+
+const store = useCartStore()
+
+const addCart = () => {
+  store.addToCart(props.food)
+}
 </script>
 
 <template>
 
   <div class="bg-gray-second p-5 sm:max-w-72 md:mx-auto carousel-item rounded-md space-y-3 text-center relative">
 
-    <IconsOutlineFavorite @click="toggleFavorite(food.id)"
-      :class="[isFavorite(food.id) ? 'text-green-color' : 'text-gray-color']"
-      class="w-8 h-8 absolute text-gray-color right-5"></IconsOutlineFavorite>
+    <IconsOutlineFavorite @click="toggleFavorites(props.food)"
+      :class="[isFavorite(props.food.id) ? 'text-green-color' : 'text-gray-color']"
+      class="w-8 h-8 absolute text-gray-color right-5">
+    </IconsOutlineFavorite>
 
     <img :src="food.picture" alt="Popular food" class="w-[75%] mx-auto" />
 
@@ -44,8 +52,7 @@ const { toggleFavorite, isFavorite } = useFavorites();
     <p class="text-lg text-black">${{ food.actualPrice }} <del class="text-gray-color text-sm">${{ food.oldPrice
         }}</del></p>
 
-    <ButtonComponent buttonName="Add to Cart"></ButtonComponent>
-
+    <ButtonComponent buttonName="Add to Cart" @click="addCart"></ButtonComponent>
   </div>
 
 </template>
